@@ -13,10 +13,10 @@ function App() {
   useEffect(() => {
          setIsLoaded(true)
   },[])
+
   return (
     <div className= {`app ${isloaded ? "loaded" : ""}`}>
-      <Navbar />
-      
+      <Navbar/>
       <Hero/>
       <Projects/>
       <Contact/>
@@ -26,6 +26,7 @@ function App() {
       <p>&copy; Luan Portfólio  2025. All right reserved</p>
       </>
     </div>
+    
   );
 }
 
