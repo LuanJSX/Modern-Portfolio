@@ -95,22 +95,38 @@ function Hero() {
             <SyntaxHighlighter language="typescript" customStyle={{margin: 0, panding: "2rem", height: "100%", borderRadius: "20px", marginBottom:50 }} style={vscDarkPlus}>
                 {`const aboutMe: DeveloperProfile = {
   codename: "Luan",
-  origin: "☕Café e Commits",
+  origin: "☕ Café e Commits",
   role: "Desenvolvedor Fullstack Web",
+  education: {
+    degree: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+    institution: "Unopar",
+    graduationYear: 2020,
+    postGraduation: {
+      course: "Pós-Graduação em Engenharia de Software",
+      institution: "Unopar",
+      graduationYear: 2023,
+    },
+  },
+  experience: [
+    {
+      role: "Desenvolvedor Full Stack",
+      company: "FACULDADE PETRA LTDA",
+      type: "Estágio",
+      duration: "ago de 2024 - jan de 2025 (6 meses)",
+      location: "Juiz de Fora, MG · Híbrido",
+    },
+    {
+      role: "Desenvolvedor Full Stack",
+      company: "RARUS - Escola de Psicanálise",
+      type: "Estágio",
+      duration: "mar de 2024 - ago de 2024 (6 meses)",
+      location: "Juiz de Fora, MG · Híbrido",
+    },
+  ],
   stack: {
     languages: ["JavaScript", "TypeScript", "SQL"],
     frameworks: ["React", "Next.js", "TailwindCSS"],
-  },
-  traits: [
-    "focado em clean code",
-    "especialista em console.log",
-    "dark mode lover",
-    "minimalista funcional",
-  ],
-  missionStatement:
-    "Transformando ideias em interfaces e bugs em funcionalidades bonitas e responsivas.",
-  availability: "Disponível para novas oportunidades",
-};`}
+  }`}
             </SyntaxHighlighter>
           </div>
           <motion.div className="floating-card" animate={{y:[0, -10, 0], rotate: [0,2,0]}} transition={{duration: 4, repeat: Infinity,ease: "easeInOut"}}>
