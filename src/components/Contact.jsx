@@ -95,7 +95,7 @@ const handleSubmit = async (e) => {
   <motion.form className='contact-form' onSubmit={handleSubmit}>
     <motion.input type='text' name='name' placeholder='Seu Nome...'required whileFocus={{scale: 1.02}} onChange={handleInputChange}>
     </motion.input>
-    <motion.input type='email' name='email' placeholder='Seu email...'required whileFocus={{scale: 1.02}} onChange={handleInputChange}>
+    <motion.input type='email' name='email' placeholder='Seu Email...'required whileFocus={{scale: 1.02}} onChange={handleInputChange}>
     </motion.input>
     <motion.textarea type='text' name='message' placeholder='Sua Mensagem...'required whileFocus={{scale: 1.02}} onChange={handleInputChange}>
     </motion.textarea>
