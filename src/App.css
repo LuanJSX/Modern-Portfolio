@@ -310,6 +310,11 @@ color: var(--primary-color);
   }
 }
 
+@media (max-width: 600px) {
+  .navbar {
+    gap: 0.7rem;
+  }
+}
 
 .projects {
   padding: 6rem 5%;
